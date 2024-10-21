@@ -6,7 +6,6 @@ const resultDisplay = document.querySelector('.resultDisplay');
 const playerScoreDisplay = document.getElementById('playerScoreDisplay');
 const computerScoreDisplay = document.getElementById('computerScoreDisplay');
 
-
 let humanScore = 0;
 let computerScore = 0;
 
@@ -47,7 +46,7 @@ function playGame(humanChoice) {
 
         case "YOU LOSE!":
             resultDisplay.classList.add('redText');
-            computerScore;
+            computerScore++;
             computerScoreDisplay.textContent = computerScore;
         }
 }
