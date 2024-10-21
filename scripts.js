@@ -37,6 +37,8 @@ function playGame(humanChoice) {
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
     resultDisplay.textContent = result;
 
+    resultDisplay.classList.remove('greenText', 'redText');
+
     switch(result) {
         case "YOU WIN!":
             resultDisplay.classList.add('greenText');
@@ -51,5 +53,16 @@ function playGame(humanChoice) {
         }
 }
 
-playGame();
+//playGame();
+
+function resetGame() {
+    playerDisplay.textContent = "PLAYER: ";
+    computerDisplay.textContent = "COMPUTER: ";
+    resultDisplay.textContent = "";
+    resultDisplay.classList.remove('greenText', 'redText');
+    humanScore = 0;
+    computerScore = 0; 
+    playerScoreDisplay.textContent = humanScore;
+    computerScoreDisplay.textContent = computerScore;
+}
 
