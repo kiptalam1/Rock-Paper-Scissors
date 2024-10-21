@@ -53,8 +53,6 @@ function playGame(humanChoice) {
         }
 }
 
-//playGame();
-
 function resetGame() {
     playerDisplay.textContent = "PLAYER: ";
     computerDisplay.textContent = "COMPUTER: ";
