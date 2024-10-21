@@ -7,6 +7,26 @@
 </head>
 <body>
 <h1>Rock Paper Scissors</h1>
+
+<div class="choices">
+    <button class="rock" onclick="playGame('rock')">Rock</button>
+    <button class="paper" onclick="playGame('paper')">Paper</button>
+    <button class="scissors" onclick="playGame('scissors')">Scissors</button>
+</div>
+
+<div class="playerDisplay">PLAYER: </div>
+<div class="computerDisplay">COMPUTER: </div>
+<div class="resultDisplay">IT'S A TIE </div>
+
+<div class="scoreDisplay">Player Score: 
+    <span id="playerScoreDisplay">0</span>
+</div>
+
+<div class="scoreDisplay">Computer Score: 
+    <span id="computerScoreDisplay">0</span>
+</div>
+
+
 <script src="./scripts.js"></script>
 </body>
 </html>
